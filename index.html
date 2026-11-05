@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
 
         <title>
-            My Restaurant
+            M & H Food
         </title>
 
     </head>
@@ -19,43 +20,71 @@
                 <a href="#contact">Contact</a>
              </nav>
 
-       <h1>M and H Food</h1>
+       <h1>M & H Food</h1>
 
-       <p>We make Halal food</p>
+       <!--Hallal-->
+       
+       <p> <b> We make Halal food</b> </p>
+
        </header>
        
        <!--over food menu-->
        <section id="menu">
 
-        <h2>MENU</h2>
+        <h2 class="menu-heading">MENU</h2>
        
 
        <!--Fist div-->  <div>
 <img src="menuphoto/quinoa salad.jpg" alt="Quinoa Salad" width="250">
         <h3>Quinoa Salad</h3> 
+        <p>Quinoa Salad is a healthy and delicious dish made with quinoa, vegetables, and a refreshing dressing.</p>
+        <p><strong>Price: $42.79</strong></p>
     </div>
         
          <!--second div--> <div>
 
 <img src="menuphoto/Beef Kofta.jpg" alt="Beef Kofta" width="250">
         <h3>Beef Kofta</h3> 
+        <p>Beef Kofta is a delicious dish made with tender beef and a rich, spicy sauce.</p>
+        <p><strong>Price: $45.99 </strong></p>
     </div> 
    
     <!--third div-->  <div>
  
 <img src="menuphoto/Chicken Paypie.jpg" alt="Chicken Paypie" width="250">
         <h3>Chicken Paypie</h3>
+        <p>Chicken Paypie is a delicious dish made with tender beef and a rich, spicy sauce.</p>
+        <p><strong>Price: $57.89 </strong></p>
  </div>
 
  <!--4th div-->  <div>
 <img src="menuphoto/Family Deal.jpg" alt="Family Deal" width="250">
         <h3>Family Deal</h3>
+        <p>Family Deal is a delicious dish made with tender beef and a rich, spicy sauce.</p>
+        <p><strong>Price: $70 </strong></p>
+
+    
 </div>
 <!--5th div-->  <div>
 
-<img src="menuphoto/Beef Nihari.jpg" alt="Beef Nihari" width="250">
+
+    <img src="menuphoto/Beef Nihari.jpg" alt="Beef Nihari" width="250">
         <h3>Beef Nihari</h3>
+        <p>Beef nihari is a delicious dish made with tender beef and a rich, spicy sauce.</p>
+        <p><strong>Price: $12.99</strong></p>
 </div>
+</section>
+
+<!--Resturent opening time-->
+
+      <section id="hours">
+ 
+    <h2>Opening Hours</h2>
+    <ul>
+        <li> Monday to Friday :11:00 AM to 11:00 PM</li>
+        <li> Saturday and Sunday : 12:00 PM to 10:00 PM</li>
+    </ul>
+
 </section>
 <!--About us-->
     <section id="about">
@@ -63,19 +92,74 @@
         <p>We serve the best halal food in town </p> 
     </section>
 
-    <button> <b>Order Now</b></button>
+   
+<section id="order">
 
-    <div> 
-        
-        <a href="https://www.google.com">visit Google</a> 
-    
-    </div>
+    <h2>Place Your Order</h2>
+
+    <form>
+
+        <label>Your Name:</label>
+        <input type="text" id="customerName">
+
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email">
+
+        <br><br>
+
+        <label>Contact No:</label>
+        <input type="tel">
+
+        <br><br>
+
+        <label>Order Details:</label>
+        <textarea rows="4" cols="30" placeholder="Type your order details"></textarea>
+
+        <br><br>
+
+        <label>Address:</label>
+        <input type="text">
+          <select>
+                    <option value="Family Deal">Family Deal</option>
+                    <option value="Beef Kofta">Beef Kofta</option>
+                    <option value="Chicken Paypie">Chicken Paypie</option>
+                    <option value="Beef Nihari">Beef Nihari</option>
+
+                </select>
+
+        <br><br>
+
+        <button type="button" onclick="showMessage()">Submit Order</button>
+
+    </form>
+
+</section>
+
+
     <section id="contact">
+
         <h2>Contact Us</h2>
+            <label> <br>Your Name:</label>
+            <input type="text">
+            <label> Email:</label>
+            <input type="email">
+            <label> <br>Contact No:</label>
+            <input type="tel">
+            <label><br>Message:</label>
+            <br>
+
           <p> Our Resturant is Located in Berlin</p>
+          
     </section>
+    <hr> 
+    <!--footer-->
+    <footer>
+        <p>Copyright &copy; 2026 M & H Food</p>
+    </footer>
 
     
-    
+    <script src="script.js"></script>
     </body>
 </html>
